@@ -1,0 +1,49 @@
+.box {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 1px solid currentcolor;
+    border-radius: 3px;
+    font-size: 30px;
+    padding: 1em;
+    position: relative;
+    margin-bottom: 0.25em;
+    vertical-align: top;
+    transition: 0.3s color, 0.3s border, 0.3s transform, 0.3s opacity;
+  }
+
+  [class*=loader-] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  color: inherit;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+.loader-03 {
+    border: 0.2em solid currentcolor;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: 1s loader-03 linear infinite;
+            animation: 1s loader-03 linear infinite;
+    position: relative;
+  }
+  
+  @-webkit-keyframes loader-03 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-03 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

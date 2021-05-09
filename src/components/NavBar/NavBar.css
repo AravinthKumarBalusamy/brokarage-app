@@ -1,0 +1,8 @@
+.navbar {
+  background-color: #244773;
+}
+
+.navbar-dropdown-menu {
+  width: 250px;
+  padding: 20px !important;
+}
